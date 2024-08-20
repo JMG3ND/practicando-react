@@ -1,0 +1,70 @@
+.card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    min-width: 300px;
+    justify-content: space-between;
+}
+
+.card__section-img-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card__section-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.card__follow {
+    padding: 0.5rem;
+    border-radius: 100px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    border: white solid 1px;
+    background-color: transparent;
+    color: white;
+}
+
+.card__follow:hover {
+    color: rgba(96, 180, 70, 0.799);
+    border: rgba(96, 180, 70, 0.573) solid 1px;
+    background-color: rgba(128, 192, 108, 0.121);
+}
+
+.card__follow--siguiendo {
+    color: rgba(96, 180, 70, 0.573);
+    border: rgba(96, 180, 70, 0.573) solid 1px;
+    background-color:transparent;
+}
+
+.card__follow--siguiendo:hover {
+    background-color: rgba(255, 0, 0, 0.123);
+    color: rgba(255, 0, 0, 0.573);
+    border: rgba(255, 0, 0, 0.395) solid 1px;
+}
+
+.card__follow__dejar-hover{
+    display: none;
+}
+
+.card__follow--siguiendo:hover .card__follow__dejar-hover{
+    display: block;
+}
+
+.card__follow--siguiendo:hover .card__follow__normal{
+    display: none;
+}
+
+.card__nick {
+    font-size: small;
+    color: rgba(255, 255, 255, 0.468);
+}
