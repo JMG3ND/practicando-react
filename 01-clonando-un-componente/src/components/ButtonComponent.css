@@ -1,0 +1,40 @@
+.follow {
+    padding: 0.5rem;
+    border-radius: 100px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    border: white solid 1px;
+    background-color: transparent;
+    color: white;
+}
+
+.follow:hover {
+    color: rgba(96, 180, 70, 0.799);
+    border: rgba(96, 180, 70, 0.573) solid 1px;
+    background-color: rgba(128, 192, 108, 0.121);
+}
+
+.follow--siguiendo {
+    color: rgba(96, 180, 70, 0.573);
+    border: rgba(96, 180, 70, 0.573) solid 1px;
+    background-color:transparent;
+}
+
+.follow--siguiendo:hover {
+    background-color: rgba(255, 0, 0, 0.123);
+    color: rgba(255, 0, 0, 0.573);
+    border: rgba(255, 0, 0, 0.395) solid 1px;
+}
+
+.follow__dejar-hover{
+    display: none;
+}
+
+.follow--siguiendo:hover .follow__dejar-hover{
+    display: block;
+}
+
+.follow--siguiendo:hover .follow__normal{
+    display: none;
+}

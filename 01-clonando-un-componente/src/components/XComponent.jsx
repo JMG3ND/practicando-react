@@ -1,9 +1,8 @@
-import { useState } from "react";
+import ButtonComponent from "./ButtonComponent";
 import "./XComponent.css";
 
 export default function XComponent({ userName, isFollowing, nick, urlImg }) {
-  const [isFollow, setIsFollow] = useState(isFollowing);
-  const handleclick = () => setIsFollow(!isFollow);
+  
   return (
     <>
       <section className="card">
@@ -14,17 +13,7 @@ export default function XComponent({ userName, isFollowing, nick, urlImg }) {
             <span className="card__nick">{nick}</span>
           </div>
         </div>
-        <button
-          onClick={handleclick}
-          className={`card__follow card__follow--${
-            isFollow ? "siguiendo" : "seguir"
-          }`}
-        >
-          <span className="card__follow__dejar-hover">Dejar de seguir</span>
-          <span className="card__follow__normal">
-            {isFollow ? "Siguiendo" : "Seguir"}{" "}
-          </span>
-        </button>
+        <ButtonComponent isFollowing={isFollowing} />
       </section>
     </>
   );
