@@ -19,6 +19,7 @@
 }
 
 .modal__button_ok {
+    cursor: pointer;
     padding: 1rem;
     border-radius: 1rem;
     min-width: 150px;
